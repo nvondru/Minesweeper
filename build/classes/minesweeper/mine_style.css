@@ -1,0 +1,37 @@
+.pane-style{
+    -fx-background-color: LIGHTGRAY;
+    -fx-background-radius: 20;
+    
+}
+.btnStyle{
+    -fx-background-color: dimgray;
+    -fx-background-radius: 20;
+    -fx-text-fill: lightgray;
+    
+}
+.widowStyle{
+    -fx-background-color: dimgray;
+    
+}
+
+.lblStyle{
+    -fx-background-color: dimgray;
+    -fx-background-radius: 30;
+    -fx-text-fill: lightgray;
+}
+.statBar{
+    -fx-background-color: lightgray;
+    -fx-background-radius: 100;
+  
+}
+.textBlack{
+    -fx-text-fill: #002d30;
+    
+}
+.noBorder{
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-color: white;
+    -fx-opacity: 0.85;
+    
+}

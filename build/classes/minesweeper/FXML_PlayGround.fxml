@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="playWindow" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="300.0" styleClass="widowStyle" stylesheets="@mine_style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minesweeper.PlayGroundController">
+   <center>
+      <AnchorPane fx:id="panePlayGround" prefHeight="0.0" prefWidth="0.0" styleClass="pane-style" stylesheets="@mine_style.css" BorderPane.alignment="CENTER" />
+   </center>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <bottom>
+      <HBox minHeight="0.0" minWidth="0.0" prefHeight="60.0" prefWidth="0.0" styleClass="statBar" BorderPane.alignment="CENTER">
+         <children>
+            <Region minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnRest" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonRestart" prefHeight="40.0" prefWidth="110.0" styleClass="btnStyle" stylesheets="@mine_style.css" text="Neustart">
+               <font>
+                  <Font name="SquaresBold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+            <Region minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnBack" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="40.0" prefWidth="110.0" styleClass="btnStyle" stylesheets="@mine_style.css" text="Zurueck">
+               <font>
+                  <Font name="SquaresBold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Region minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="40.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="80.0" prefWidth="0.0" styleClass="statBar" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="50.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="counterMines" alignment="CENTER" prefHeight="60.0" prefWidth="60.0" styleClass="lblStyle" stylesheets="@mine_style.css" text="20">
+               <font>
+                  <Font name="SquaresBold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Label>
+            <Region prefHeight="50.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="counterTime" alignment="CENTER" prefHeight="60.0" prefWidth="60.0" styleClass="lblStyle" stylesheets="@mine_style.css" text="0">
+               <font>
+                  <Font name="SquaresBold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Label>
+            <Region prefHeight="60.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="40.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+</BorderPane>
